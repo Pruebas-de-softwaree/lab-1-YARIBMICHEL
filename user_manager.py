@@ -65,6 +65,18 @@ if __name__ == "__main__":
     user_manager.find_user(100)
     end = time.time()
     print("duration",end-start,("segundos"))
+#RNF3
+    duplicados = []
+    user_manager.add_user(1,"yarib")
+    for i in user_manager.get_all_names():
+        if user_manager.get_all_names().count(i) > 1 and i not in duplicados:
+            duplicados.append(i)
+
+    print("Duplicados:",duplicados)
+             
+
+         
+
 
 
         
