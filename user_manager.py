@@ -60,6 +60,11 @@ if __name__ == "__main__":
     for i in range(1000):
          user_manager.add_user(i,f"Yo soy el num:{i}")
     print(user_manager.get_all_names())
+#RNF2 
+    start = time.time()
+    user_manager.find_user(100)
+    end = time.time()
+    print("duration",end-start,("segundos"))
 
 
         
