@@ -32,10 +32,11 @@ if __name__ == "__main__":
     for i in range(500):
         user_manager.add_user(i,f"Yo soy el num:{i}")
 
-    print("end")
+    
     #rf2
     for i in range (500):   
         print(user_manager.find_user(i))  
+        print("end")
 #rf3
 
     #for i in range (500):   
@@ -45,9 +46,13 @@ if __name__ == "__main__":
 
 #rf4
      
-        Name = user_manager.get_all_names()
-        print(Name)
+       # Name = user_manager.get_all_names()
+       # print(Name)
 
+#rf5
+        promedio = user_manager.average_user_id()
+        print (promedio)
+        print("end")
 
 
         
